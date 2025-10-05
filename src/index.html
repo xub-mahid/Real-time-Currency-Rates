@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body >
+    <style>
+        input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+       }
+       
+       
+       /* For Firefox */
+       input[type=number] {
+           -moz-appearance: textfield;
+       }
+    </style>
+    
+<div class=" select-none main w-screen h-[100vh] flex justify-center items-center bg-[url(https://i.postimg.cc/MpmqjxLQ/Gemini-Generated-Image-nay260nay260nay2.png)]   bg-cover bg-center">
+
+  <div class="w-[1000px] h-[700px] bg-white-600 rounded-2xl border-3 p-10  backdrop-blur-3xl  ">
+     <h5 class="text-center font-extrabold text-4xl m-2 ">Real-time Currency Rates</h5>
+     <div class="">
+        <!-- input -->
+        <div class=" flex justify-center mt-16">
+             <input type="number"  class="w-full h-[70px] border p-5 text-center font-bold text-2xl font-serif rounded-2xl focus:outline-none"  min="1" id="ammount" placeholder="Enter amount">
+        </div>
+
+        <div class=" w-full h-[200px] flex items-center justify-evenly ">
+
+             <!-- from -->
+              <span class=" relative bottom-13 left-10 font-bold border-b-2">From:</span>
+         <div class=" m-4 relative right-12 flex justify-center w-full  h-[70px] rounded-2xl border-2">
+
+
+             <select name="" class=" focus:outline-none flex justify-center font-extrabold   w-[250px] " id="from">
+               <option class="font-bold " value="EUR">EUR</option>
+               <option class="font-bold " value="JPY">JPY</option>
+               <option class="font-bold " value="GBP">GBP</option>
+               <option class="font-bold " value="USD">USD</option>
+               <option class="font-bold " value="AUD">AUD</option>
+               <option class="font-bold " value="CAD">CAD</option>
+               <option class="font-bold " value="CNY">CNY</option>
+               <option class="font-bold " value="INR">INR</option>
+               <option class="font-bold " value="BDT">BDT</option> 
+               <option class="font-bold " value="SAR">SAR</option>
+             </select>
+
+         </div>
+         <!-- end -->
+         <!-- to -->
+                <span class=" relative bottom-13 left-18 font-bold border-b-2">To:</span>
+         <div class=" m-4  flex justify-center w-full h-[70px] rounded-2xl border-2">
+           
+            <select name="" class=" focus:outline-none flex justify-center font-extrabold   w-[250px] "  id="to">
+              <option class="font-bold "  value="PKR">PKR</option> <!-- Pakistani Rupee -->
+              <option class="font-bold "  value="NPR">NPR</option> <!-- Nepalese Rupee -->
+              <option class="font-bold "  value="MYR">MYR</option> <!-- Malaysian Ringgit -->
+              <option class="font-bold "  value="BDT">BDT</option> 
+              <option class="font-bold "  value="THB">THB</option> <!-- Thai Baht -->
+              <option class="font-bold "  value="AED">AED</option> <!-- UAE Dirham -->
+              <option class="font-bold "  value="KWD">KWD</option> <!-- Kuwaiti Dinar -->
+              <option class="font-bold "  value="QAR">QAR</option> <!-- Qatari Riyal -->
+              <option class="font-bold "  value="SGD">SGD</option> <!-- Singapore Dollar -->
+              <option class="font-bold "  value="ZAR">ZAR</option> <!-- South African Rand -->
+              <option class="font-bold "  value="CHF">CHF</option> <!-- Swiss Franc -->
+            </select>
+         </div>
+         <!-- end -->
+        </div>
+
+           <div class="w-full h-[80px]  flex justify-center items-center ">
+            <h1 id="result" class="font-extrabold text-2xl">Rate: 00</h1>
+          </div>
+          <!-- button -->
+          <div class="w-full flex justify-center items-center m-4">
+             <button class=" p-2 w-[400px] h-13 rounded-full bg-green-400 hover:bg-red-500 font-bold font-serif" onclick="currencyFun()">Track exchange rate</button>
+          </div>
+         
+
+
+     </div>
+      
+ </div>
+
+
+</div>
+    
+
+    <script src="index.js"></script>
+</body>
+</html>
